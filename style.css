@@ -1,0 +1,152 @@
+:root{
+    /* color */
+    --white-color:#FFF;
+    --black-color:#000;
+    --grey-light-color:#979696;
+    --carrot-color:#BA4706;
+    --background-color:#EFEFEF;
+    /* size */
+    --header-padding:80px 80px;
+    --menu-padding: 8px 32px;
+    --side-padding: 12px;
+    /* font size*/
+    --font-xlarge:128px;
+    --font-large:40px;
+    --font-medium:24px;
+    --font-small:22px;
+    --font-micro:18px;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: karla;
+    background: var(--background-color);
+}
+
+/* header */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--header-padding);
+    align-items: center;
+}
+
+header .name{
+    color: var(--black-color);
+    font-size: var(--font-large);
+   
+}
+
+header .menu{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 36px;
+}
+
+header .menu li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header .menu li:hover{
+    border-bottom: solid 2px var(--carrot-color)
+}
+header .icons{
+    margin-left: 82px;
+}
+
+header .icons .fa-brands{
+    margin-left: 12px;
+}
+
+/* main */
+.main .text{
+    font-size: 158px;
+    font-family: 'Staatliches';
+    padding: 80px;
+    line-height: 130px;
+}
+
+.main .text2{
+    color: var(--background-color);
+    -webkit-text-stroke: 1.5px var(--carrot-color)
+}
+
+/* main-project */
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 80px;
+    padding:200px;
+    border-top: 1px solid var(--grey-light-color);
+    border-bottom: 1px solid var(--grey-light-color);
+}
+
+.project{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    flex-direction: column;
+}
+
+.pjname{
+    font-weight: bold;
+    font-size: var(--font-small);
+    padding: 12px;
+}
+
+.pjinfo{
+    font-size: var(--font-micro);
+}
+
+#myimg {
+    width: 430px;
+    height: 300px;
+    padding: 20px 50px;
+}
+/* footer */
+footer .menu{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    align-content: space-between;
+    padding-top: 150px;
+}
+
+footer .menu li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer .icons{
+    text-align: center;
+    margin-left: 22px;
+    padding-top: 40px;
+    padding-bottom: 180px;
+}
+
+footer .icons .fa-brands{
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+/*max-width 800px*/
+@media only screen and (max-width: 768px) {
+    body{
+        margin-left: 20;
+
+    }
+    header .name{ font-size: 28px;}
+    header .menu { font-size: 12px; }
+    
+    .main .text{ font-size: 80px;
+                line-height: 90px;
+    }
+}
